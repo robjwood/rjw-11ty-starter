@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/**
+ * This is where we set the headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--grey-900);
+  font-family: var(--font-accent);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-l);
+}
+
+h5 {
+  font-size: var(--font-size-s);
+}

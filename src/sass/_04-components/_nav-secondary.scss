@@ -1,0 +1,81 @@
+﻿/* NAV SECONDARY
+===========================================
+  For now, this holds only the styles for
+  the publican channel primary navigation.
+===========================================*/
+
+
+.c-nav-secondary {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  @include mq-ns {
+  }
+}
+
+// I've had to sue this crazy selector to style the root of each section in the nav.
+// Until I can adjust the plugin to give these elements their own class, this is where we are. 
+// So, it selects the item that's a direct child of the main nav but only the first one. It then styles the a tag of this elements.
+// After that it styles the direct child <li> of the main nav and all the sibling <li>s. It then styles their <a> tags. Phew! 
+// We shall never speak of this again.
+
+.c-nav-secondary > .c-nav-secondary__item:first-child > a,
+.c-nav-secondary > li + li > a {
+  color: $Blue50;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: $u3;
+}
+
+  .c-nav-secondary__item {
+    list-style-type: none;
+    margin-top: 0;
+    margin-right: $u2;
+
+    &.active > a {
+      border-left-width: 3px;
+      border-left-style: solid;
+      border-left-color: $Grey90;
+      font-weight: bold;
+      margin-left: -$u2;
+      padding-left: calc(#{$u2} - 3px);
+
+      // u-nl2 u-pl2 u-mt0 u-b u-bl u-bw2 u-dib u-mr2
+    }
+
+
+    > ul {
+      // Overwrite the globally set margin
+      margin-top: 0; 
+      padding-left: 0;
+
+      > li:before {
+        // Overwrite the auto bullet styles.
+        content: ""; 
+        font-size: inherit;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    a {
+      color: $Grey90;
+      display: block;
+      padding-top: $u1;
+      padding-bottom: $u1;
+      text-decoration: none;
+      
+      &:hover {
+        background-color: $Grey20;
+        border-left-width: 3px;
+        border-left-style: solid;
+        border-left-color: $Grey90;
+        font-weight: bold;
+        margin-left: -$u2;
+        padding-left: calc(#{$u2} - 3px);
+      }
+
+    }
+  }

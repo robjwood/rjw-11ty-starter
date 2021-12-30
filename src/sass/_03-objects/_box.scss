@@ -1,0 +1,111 @@
+/* BOX
+===========================================
+===========================================*/
+
+
+
+[class^='o-box'] {
+  padding: var(--spacing-l);
+  // border: var(--spacing-xs) solid;
+
+  color: var(--black);
+  background-color: var(--white);
+}
+
+  .o-box * {
+    // color: inherit;
+  }
+
+  .o-box.invert {
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+
+
+  // Size variants
+  .o-box--0 {
+    padding: 0;
+  }
+
+  .o-box--xs {
+    padding: var(--spacing-xs);
+  }
+
+  .o-box--s {
+    padding: var(--spacing-s);
+  }
+
+  .o-box--m {
+    padding: var(--spacing-m);
+  }
+
+  .o-box--l {
+    padding: var(--spacing-l);
+  }
+
+  .o-box--xl {
+    padding: var(--spacing-xl);
+  }
+
+
+
+  // Border variants
+  .o-box--borderless {
+    border-color: transparent;
+  }
+
+
+
+
+
+  
+
+/* ==========================================================================
+  #BOX
+  ========================================================================== */
+
+/**
+ * The box object simply boxes off content. Extend with cosmetic styles in the
+ * Components layer.
+ *
+ * 1. So we can apply the `.o-box` class to naturally-inline elements.
+ */
+
+// .o-box {
+//   // @include inuit-clearfix();
+//   display: block;
+//   padding: $u1;
+
+//   > :last-child {
+//     margin-bottom: 0;
+//   }
+
+// }
+
+
+
+
+
+// /* Size variants
+//    ========================================================================== */
+
+// .o-box--flush {
+//   padding: 0;
+// }
+
+// .o-box--tiny {
+//   padding: $u1 / 2;
+// }
+
+// .o-box--small {
+//   padding: $u1 / 1.5;
+// }
+
+// .o-box--large {
+//   padding: $u4;
+// }
+
+// .o-box--huge {
+//   padding: $u5;
+// }

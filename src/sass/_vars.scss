@@ -1,0 +1,147 @@
+/* VARIABLES
+===========================================
+
+===========================================*/
+
+
+:root {
+  // Units. These can be used for anything.
+  --spacing-2xs: 0.1rem;  
+  --spacing-xs: 0.25rem;    
+  --spacing-s: 0.5rem;      
+  --spacing-m: 1rem;      
+  --spacing-l: 1.5rem;      
+  --spacing-xl: 2rem;    
+  --spacing-2xl: 3rem;  
+  --spacing-3xl: 4rem;  
+
+
+  --font-base: Georgia, 'helvetica neue', helvetica, arial, sans-serif;
+  --font-accent: system-ui, 'helvetica neue', helvetica, arial, sans-serif;
+
+  --measure: 60ch;
+
+
+  /* Font sizes */
+
+  --ratio: 1.2;
+
+  --font-size-xs:   calc(var(--font-size-s) / var(--ratio));
+  --font-size-s:    calc(var(--font-size-m) / var(--ratio));
+
+  --font-size-m:    1rem;
+
+  --font-size-l:    calc(var(--font-size-m) * var(--ratio));
+  --font-size-xl:   calc(var(--font-size-l) * var(--ratio));
+  --font-size-2xl:  calc(var(--font-size-xl) * var(--ratio));
+  --font-size-3xl:  calc(var(--font-size-2xl) * var(--ratio));
+  --font-size-4xl:  calc(var(--font-size-3xl) * var(--ratio));
+  --font-size-5xl:  calc(var(--font-size-4xl) * var(--ratio));
+
+
+  /* Line heights */
+  /* --line-height-none:   1; */
+  /* --line-height-xs:     1.25; */
+  /* --line-height-s:      1.375; */
+
+  /* --line-height-normal: 1.5; */
+
+  /* --line-height-l:      1.625; */
+  /* --line-height-xl:     2; */
+  /* --line-height-2xl:    2.5; */
+  /* --line-height-3xl:    3; */
+
+
+  /* Flow space */
+  --flow-space: 1.5em;
+
+  /* Brand colours */
+  /* ----------------------------------------- */
+
+  /* Greyscale */
+  --white:      hsla(0,0%,100%,1);
+
+  --grey-100:   hsla(214,10%,97%,1);
+  --grey-200:   hsla(214,10%,90%,1);
+  --grey-300:   hsla(214,10%,75%,1);
+  --grey-500:   hsla(214,10%,50%,1);
+  --grey-800:   hsla(214,10%,30%,1);
+  --grey-900:   hsla(214,15%,20%,1);
+
+  --black:      hsla(0,0%,0%,1);       
+    
+  /* Blue */
+  --blue-100:   hsla(223,32%,97%,1);
+  --blue-200:   hsla(223,32%,77%,1);
+  --blue-300:   hsla(223,32%,57%,1);
+  --blue-500:   hsla(214,68%,34%,1);
+  --blue-800:   hsla(214,68%,20%,1);
+  --blue-900:   hsla(214,68%,13%,1);
+
+  /* Violet */
+  --violet-100: hsla(300,27%,97%,1);
+  --violet-200: hsla(300,27%,78%,1);
+  --violet-300: hsla(300,27%,60%,1);
+  --violet-500: hsla(296,39%,41%,1);
+  --violet-800: hsla(296,39%,24%,1);
+  --violet-900: hsla(296,39%,16%,1);
+
+  /* Purple */
+  --purple-100: hsla(278,29%,96%,1);
+  --purple-200: hsla(278,29%,72%,1);
+  --purple-300: hsla(278,29%,50%,1);
+  --purple-500: hsla(278,88%,25%,1);
+  --purple-800: hsla(278,84%,15%,1);
+  --purple-900: hsla(278,92%,10%,1);
+
+  /* Gold */
+  --gold-100:   hsla(45,100%,98%,1);
+  --gold-200:   hsla(45,100%,84%,1);
+  --gold-300:   hsla(45,100%,67%,1);
+  --gold-500:   hsla(45,100%,49%,1);
+  --gold-800:   hsla(45,100%,26%,1);
+  --gold-900:   hsla(45,100%,18%,1);
+  
+  /* Aqua */
+  --aqua-100:   hsla(197,64%,97%,1);
+  --aqua-200:   hsla(197,64%,84%,1);
+  --aqua-300:   hsla(197,64%,69%,1);
+  --aqua-500:   hsla(193,86%,45%,1);
+  --aqua-800:   hsla(193,100%,25%,1);
+  --aqua-900:   hsla(193,100%,17%,1);
+  
+  /* Pear */
+  --pear-100:   hsla(76,85%,97%,1);
+  --pear-200:   hsla(76,58%,81%,1);
+  --pear-300:   hsla(76,56%,64%,1);
+  --pear-500:   hsla(76,72%,44%,1);
+  --pear-800:   hsla(76,72%,26%,1);
+  --pear-900:   hsla(76,72%,17%,1);
+  
+  /* Pink */
+  --pink-100:   hsla(331,64%,97%,1);
+  --pink-200:   hsla(331,64%,82%,1);
+  --pink-300:   hsla(331,64%,65%,1);
+  --pink-500:   hsla(322,100%,39%,1);
+  --pink-800:   hsla(322,100%,23%,1);
+  --pink-900:   hsla(322,100%,16%,1);
+
+  --positive:          hsla(120,75%,25%,1);
+  --positiveLight:     hsla(120,75%,90%,1);
+  
+  --caution:           hsla(45,75%,50%,1);
+  --cautionLight:      hsla(45,75%,90%,1);
+  
+  --negative:          hsla(0,75%,50%,1);
+  --negativeLight:     hsla(0,75%,90%,1);
+  
+  --neutral:           hsla(200,40%,35%,1);
+  --neutralLight:      hsla(200,40%,90%,1);
+    
+  --colour-primary-500:   hsla(55,100%,50%,1);
+
+  // font-size: calc(0.333vw + 1em);
+  // font-size: clamp(var(--font-size-xs), var(--font-size-l), var(--font-size-3xl));
+  font-size: clamp(var(--font-size-m), 1.8vw, var(--font-size-l));
+
+}

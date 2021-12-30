@@ -1,0 +1,21 @@
+/* HEADER
+===========================================
+
+===========================================*/
+
+.c-header {
+  background-color: var(--colour-primary-500);
+  padding-top: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
+  position: relative;
+}
+
+.c-logo {
+  text-align: center;
+  margin-bottom: var(--spacing-m);
+}
+
+.c-logo  a {
+  font-family: var(--font-accent);
+  text-decoration: none;
+}
