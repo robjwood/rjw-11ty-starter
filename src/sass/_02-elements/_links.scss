@@ -3,8 +3,8 @@
 ===========================================*/
 
 a {
-  box-shadow: inset 0px -0.2rem 0 var(--colour-primary-500);
-  color:  var(--black);
+  // box-shadow: inset 0px -0.2rem 0 var(--colour-primary-500);
+  color:  var(--blue-300);
   text-decoration: none;
   text-decoration-skip: ink;
 
@@ -16,7 +16,7 @@ a {
   }
 
   a:hover {
-    box-shadow: inset 0px -1.2rem 0 var(--colour-primary-500);
+    // box-shadow: inset 0px -1.2rem 0 var(--colour-primary-500);
     text-decoration: underline;
     cursor: pointer;
   }

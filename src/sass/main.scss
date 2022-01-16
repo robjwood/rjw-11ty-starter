@@ -50,3 +50,20 @@
 /* UTILITIES */
 @import "_05-utilities/spacing";
 @import "_05-utilities/widths";
+
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery {
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  grid-gap: 1rem;
+
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  // grid-gap: 1rem;
+}

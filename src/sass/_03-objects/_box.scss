@@ -6,21 +6,7 @@
 
 [class^='o-box'] {
   padding: var(--spacing-l);
-  // border: var(--spacing-xs) solid;
-
-  color: var(--black);
-  background-color: var(--white);
 }
-
-  .o-box * {
-    // color: inherit;
-  }
-
-  .o-box.invert {
-    color: var(--white);
-    background-color: var(--black);
-  }
-
 
 
   // Size variants

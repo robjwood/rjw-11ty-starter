@@ -1,7 +1,17 @@
 ---
 layout: base.njk
-title: Wattoland
+title: Happy birthday!
 ---
 
-Welcome to Wattoland!
+Happy birthday!
 
+Here is your first clue:
+
+
+<div class="page-navigation">
+
+  [](/)
+
+  [First clue →](/1)
+
+</div>

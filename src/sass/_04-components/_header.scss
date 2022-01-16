@@ -4,10 +4,8 @@
 ===========================================*/
 
 .c-header {
-  background-color: var(--colour-primary-500);
   padding-top: var(--spacing-m);
   padding-bottom: var(--spacing-m);
-  position: relative;
 }
 
 .c-logo {
@@ -15,7 +13,7 @@
   margin-bottom: var(--spacing-m);
 }
 
-.c-logo  a {
+.c-logo a {
   font-family: var(--font-accent);
   text-decoration: none;
 }
