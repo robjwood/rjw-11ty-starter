@@ -36,7 +36,9 @@ dd {
 }
 
 body {
+  background-color: hsl(11, 39%, 92%);
   font-family: var(--font-base);
+  line-height: 1.5;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }

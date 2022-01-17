@@ -51,6 +51,25 @@
 @import "_05-utilities/spacing";
 @import "_05-utilities/widths";
 
+.face {
+  display: grid;
+  place-content: center;
+  padding: 24px 0;
+}
+
+.logo {
+  animation: rotation 30s infinite linear;
+  width: 120px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 .page-navigation {
   display: flex;
@@ -59,11 +78,14 @@
 
 .gallery {
   display: grid;
-  // grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   grid-gap: 1rem;
+}
 
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  // grid-gap: 1rem;
+.clue-link {
+  background: black;
+  color: white !important;
+  padding: 16px;
+  border-radius: 8px
+
 }
