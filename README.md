@@ -1,4 +1,4 @@
-# 11ty Sass Skeleton
+# Basic starter site
 
 Basic starter site (based off 11ty Sass Skeleton created by by [@5t3ph](https://twitter.com/5t3ph))
 
