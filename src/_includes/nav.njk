@@ -8,11 +8,14 @@
 
     {% for page in collections.pages %}
     <li>
+      {% if currentUrl === page.url %}<strong>{% endif %}
       <a 
         {% if currentUrl === page.url %}aria-current="page"{% endif %} 
-        href="{{ page.url }}">
-          {{ page.data.title }}
+        href="{{ page.url }}"
+      >
+        {{ page.data.title }}
       </a>
+      {% if currentUrl === page.url %}</strong>{% endif %}
     </li>
     {%- endfor %}
   </ul>

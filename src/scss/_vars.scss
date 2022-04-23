@@ -45,6 +45,4 @@
   /* Greyscale */
   --white:      hsla(0,0%,100%,1);
   --black:      hsla(0,0%,0%,1);       
-    
-  font-size: clamp(var(--font-size-m), 1.8vw, var(--font-size-l));
 }

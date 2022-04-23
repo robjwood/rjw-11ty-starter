@@ -1,6 +1,10 @@
 # Basic starter site
 
-Basic starter site (based off 11ty Sass Skeleton created by by [@5t3ph](https://twitter.com/5t3ph))
+Basic starter site (based off 11ty Sass Skeleton created by by [@5t3ph](https://twitter.com/5t3ph)).
+
+I've stripped the styles down but left references to more opinioned styles commented out of `main.scss`.
+
+Everything below from the original 11ty Sass Skeleton README 👇.
 
 
 ## Development Scripts

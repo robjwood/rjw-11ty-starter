@@ -6,12 +6,12 @@ NAV Primary
 */
 
 .c-nav-primary {
-  font-family: var(--font-accent);
+  // font-family: var(--font-accent);
   list-style-type: none;
 }
 
   .c-nav-primary a {
-    text-decoration: none;
+    // text-decoration: none;
     
     &[aria-current="page"] {
       font-weight: bold;
