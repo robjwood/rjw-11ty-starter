@@ -3,12 +3,9 @@
 ===========================================*/
 
 a {
-  // box-shadow: inset 0px -0.2rem 0 var(--colour-primary-500);
   color: blue;
   text-decoration: none;
   text-decoration-skip: ink;
-
-  transition: box-shadow 0.5s ease;
 }
 
   a:visited {
@@ -16,7 +13,6 @@ a {
   }
 
   a:hover {
-    // box-shadow: inset 0px -1.2rem 0 var(--colour-primary-500);
     text-decoration: underline;
     cursor: pointer;
   }

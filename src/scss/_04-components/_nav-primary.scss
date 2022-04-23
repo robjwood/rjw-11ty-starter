@@ -11,12 +11,10 @@ NAV Primary
 }
 
   .c-nav-primary a {
-    transition: color 0.5s ease;
-    transition: background-color 1s ease;
     text-decoration: none;
     
     &[aria-current="page"] {
-      font-weight: 700;
+      font-weight: bold;
     }    
   }
 
