@@ -4,8 +4,12 @@ Basic starter site (based off 11ty Sass Skeleton created by by [@5t3ph](https://
 
 I've stripped the styles down but left references to more opinionated styles commented out of `main.scss`.
 
+Update the info in `_data/meta.js` to suit your needs. 
+
 Everything below from the original 11ty Sass Skeleton README 👇.
 
+
+---
 
 ## Development Scripts
 

@@ -13,9 +13,11 @@ h5,
 h6 {
   color: var(--grey-900);
   font-family: var(--font-accent);
+  line-height: var(--line-height-xs);
 }
 
 h1 {
+  font-family: var(--font-accent);
   font-size: var(--font-size-3xl);
   letter-spacing: -0.02em;
 }

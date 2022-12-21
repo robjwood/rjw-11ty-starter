@@ -4,21 +4,18 @@
 
 a {
   color: blue;
-  text-decoration: none;
-  text-decoration-skip: ink;
 }
 
   a:visited {
-    color: blue;
+    color: purple;
   }
 
   a:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    text-decoration: none;
   }
 
-  a:focus {
-  }
+  // a:focus {
+  // }
 
-  a:active {
-  }
+  // a:active {
+  // }
