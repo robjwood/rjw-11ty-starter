@@ -11,6 +11,7 @@ NAV Primary
 }
 
   .c-nav-primary a {
+    color: var(--white);
     text-decoration: none;
     
     &[aria-current="page"] {

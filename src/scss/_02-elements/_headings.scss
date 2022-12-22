@@ -18,8 +18,10 @@ h6 {
 
 h1 {
   font-family: var(--font-accent);
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-4xl);
   letter-spacing: -0.02em;
+  font-stretch: 100%;
+  font-weight: 800;
 }
 
 h2 {

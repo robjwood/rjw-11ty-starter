@@ -3,18 +3,9 @@
 ===========================================*/
 
 .o-cluster {
-  --space: 1.5rem;
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
 }
-
-  .o-cluster > * {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: calc(var(--space) / 2 * -1);
-  }
-
-    .o-cluster > * > * {
-      margin: calc(var(--space) / 2);
-    }
