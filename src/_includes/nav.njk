@@ -1,21 +1,14 @@
-{% set currentUrl %}{{ page.url }}{% endset %}
 <nav class="background-color:black">
   <ul class="o-box o-cluster o-centre c-nav-primary" role="list">
+    {% for item in navigation.top %}
     <li>
-      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
-    </li>
-
-    {% for page in collections.pages %}
-    <li>
-      {% if currentUrl === page.url %}<strong>{% endif %}
-      <a 
-        {% if currentUrl === page.url %}aria-current="page"{% endif %} 
-        href="{{ page.url }}"
+      <a
+        href="{{ item.url }}"
+        {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
       >
-        {{ page.data.title }}
+        {{ item.text }}
       </a>
-      {% if currentUrl === page.url %}</strong>{% endif %}
     </li>
-    {%- endfor %}
+    {% endfor %}
   </ul>
 </nav>
