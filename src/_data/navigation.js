@@ -5,8 +5,8 @@ module.exports = {
       url: '/'
     },
     {
-      text: 'Page',
-      url: '/page/'
+      text: 'Elements',
+      url: '/elements/'
     },
     {
       text: 'Section',
