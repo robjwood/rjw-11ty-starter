@@ -10,6 +10,7 @@ table {
   th, td {
     border: 1px solid var(--black);
     padding: var(--spacing-s);
+    vertical-align: top;
   }  
 
   th {
