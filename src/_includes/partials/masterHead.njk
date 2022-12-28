@@ -6,7 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }} - {{ meta.siteName }}</title>
 	<meta name="description" content="{{pageDescription}}" />
-	<link rel="preload" href="../fonts/Mona/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
-	{# <link rel="preload" href="../fonts/Hubot/Hubot-Sans.woff2" as="font" type="font/woff2" crossorigin> #}
 	<link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
+	{% set css %}
+		{% include "../../css/_01-globals/_globals.css" %}
+		{% include "../../css/_01-globals/_normalize.css" %}
+	{% endset %}
+	<style>
+		{{ css | cssmin | safe }}
+	</style>
 </head>

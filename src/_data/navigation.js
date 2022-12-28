@@ -6,11 +6,11 @@ module.exports = {
     },
     {
       text: 'Page',
-      url: '/page'
+      url: '/page/'
     },
     {
       text: 'Section',
-      url: '/section'
+      url: '/section/'
     }
   ],
   bottom: [

@@ -6,7 +6,7 @@ NAV Primary
 */
 
 .c-nav-primary {
-  // font-family: var(--font-accent);
+  /* font-family: var(--font-accent); */
   list-style-type: none;
 }
 
@@ -14,10 +14,11 @@ NAV Primary
     color: var(--white);
     text-decoration: none;
     
-    &[aria-current="page"] {
-      font-weight: bold;
-    }    
   }
+  
+  .c-nav-primary a[aria-current="page"] {
+    font-weight: bold;
+  }    
 
     .c-nav-primary a:hover {
       text-decoration: underline;

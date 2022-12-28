@@ -3,12 +3,12 @@
 
 ===========================================*/
 
-// Targets all <ul>s with no class (mainly for body copy)
+/* Targets all <ul>s with no class (mainly for body copy) */
 ul:not([class]) {
   margin-left: var(--spacing-m);
   
-  &> li {
-    // padding-bottom: var(--spacing-s);
-  }
 }
 
+ul:not([class]) > li {
+  /* padding-bottom: var(--spacing-s); */
+}

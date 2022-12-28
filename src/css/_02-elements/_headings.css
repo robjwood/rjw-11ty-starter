@@ -19,14 +19,11 @@ h6 {
 h1 {
   font-family: var(--font-accent);
   font-size: var(--font-size-4xl);
-  letter-spacing: -0.02em;
-  font-stretch: 100%;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 h2 {
   font-size: var(--font-size-2xl);
-  letter-spacing: -0.02em;
 }
 
 h3 {

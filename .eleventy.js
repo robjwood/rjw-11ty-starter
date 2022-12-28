@@ -1,9 +1,18 @@
+const CleanCSS = require("clean-css");
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./src/scss/");
+  // Watch targets
+  eleventyConfig.addWatchTarget("./src/css/");
   
   // Copy the 'images' directory 
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/css");
+
+  // Filters
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   return {
     dir: {

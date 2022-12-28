@@ -107,7 +107,7 @@ figcaption {
 }
 
 code {
-  background-color: #{'hsl(0, 0%, 90%)'};
+  background-color: hsl(0, 0%, 90%);
   border-radius: 4px;
   padding: 1px 5px 3px;
 }
