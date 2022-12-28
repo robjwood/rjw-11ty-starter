@@ -7,11 +7,4 @@
 	<title>{{ title }} - {{ meta.siteName }}</title>
 	<meta name="description" content="{{pageDescription}}" />
 	<link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
-	{% set css %}
-		{% include "../../css/_01-globals/_globals.css" %}
-		{% include "../../css/_01-globals/_normalize.css" %}
-	{% endset %}
-	<style>
-		{{ css | cssmin | safe }}
-	</style>
 </head>
