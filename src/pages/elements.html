@@ -1,7 +1,7 @@
 ---
 title: Elements
 ---
-
+<style>section {border-bottom: 1px solid lightgray; padding-bottom: 40px;}</style>
 <!-- HTML5 Kitchen sink by @dbox -->
 <main class="flow">
   <section>
@@ -14,7 +14,7 @@ title: Elements
       <h6>h6 Pack my box with five dozen liquor jugs.</h6>
     </hgroup>
   </section>
-  <hr>
+
   <section class="flow">
     <header>
       <nav>
@@ -33,19 +33,18 @@ title: Elements
     <aside>This is an aside.</aside>
     <footer>This is footer for this section</footer>
   </section>
-  <hr>
-  <section>
+
+  <section class="flow">
     <blockquote>
       <p>Blockquote: I quickly explained that many big jobs involve few hazards</p>
     </blockquote>
     <blockquote>
-      <p>This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick
-        carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
-        <cite>Steve Jobs - Apple Worldwide Developers' Conference, 1997</cite>
+      <p>This is a multi-line blockquote with a cite reference. People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.
+      <cite>Steve Jobs - Apple Worldwide Developers' Conference, 1997</cite>
       </p>
     </blockquote>
   </section>
-  <hr>
+
   <section>
     <table>
       <caption>Tables can have captions now.</caption>
@@ -78,7 +77,7 @@ title: Elements
       </tbody>
     </table>
   </section>
-  <hr>
+
   <section>
     <dl>
       <dt>Definition List Title</dt>
@@ -91,8 +90,8 @@ title: Elements
       <dd>Defines a section that is quoted from another source</dd>
     </dl>
   </section>
-  <hr>
-  <section>
+
+  <section class="flow">
     <ul>
       <li>Unordered List item one
         <ul>
@@ -113,7 +112,7 @@ title: Elements
       <li>List item three</li>
       <li>List item four</li>
     </ul>
-    <hr>
+  
     <ol>
       <li>List item one
         <ol>
@@ -135,13 +134,13 @@ title: Elements
       <li>List item four</li>
     </ol>
   </section>
-  <hr>
+
   <section>
     <address>1 Infinite Loop<br>
   Cupertino, CA 95014<br>
   United States</address>
   </section>
-  <hr>
+
   <section>
     <pre>
 pre {
@@ -157,14 +156,13 @@ pre {
 }</pre>
 
   </section>
-  <hr />
 
   <figure>
     <img src="https://picsum.photos/id/58/400/300">
-    <figcaption>Fig1. A picture from <a href="https://https://picsum.photos/">https://picsum.photos/</a></figcaption>
+    <figcaption>Fig1. A picture from <a href="https://picsum.photos/">Lorem Picsum</a></figcaption>
   </figure>
 
-  <hr>
+
   <section>
     <form class="flow">
       <p>
@@ -255,31 +253,31 @@ pre {
         <legend>I am legend</legend>
         <div>
           <label>
-            <input type="radio" name="options-radios" id="optionsR-radios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
+            <input type="radio" name="options-radios" id="optionsR-radios1" value="option1" checked>Option one is this and that&mdash;be sure to include why it's great
           </label>
         </div>
         <div>
           <label>
-            <input type="radio" name="options-radios" id="options-radios2" value="option2"> Option two can be something else and selecting it will deselect option one
+            <input type="radio" name="options-radios" id="options-radios2" value="option2">Option two can be something else and selecting it will deselect option one
           </label>
         </div>
         <div>
           <label>
-            <input type="radio" name="optionsRadios" id="options-radios3" value="option3" disabled> Option three is disabled
+            <input type="radio" name="optionsRadios" id="options-radios3" value="option3" disabled>Option three is disabled
           </label>
         </div>
       </fieldset>
+      
       <fieldset>
         <legend>I am also legend</legend>
-        <input type="checkbox"> Check me out
-        <input type="checkbox"> Or check me out
+        <label><input type="checkbox">Check me out</label>
+        <label><input type="checkbox">Or check me out</label>
       </fieldset>
-      <p>
-        <button type="button" name="button">Button</button>
-        <input type="button" name="input" value="Input Button">
-        <input type="submit" name="submit" value="Submit Button">
-        <input type="reset" name="reset" value="Reset Button">
-      </p>
+
+      <button type="button" name="button">Button</button>
+      <input type="button" name="input" value="Input Button">
+      <input type="submit" name="submit" value="Submit Button">
+      <input type="reset" name="reset" value="Reset Button">
     </form>
   </section>
 </main>

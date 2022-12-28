@@ -1,0 +1,17 @@
+/* TABLES
+===========================================
+===========================================*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+  th, td {
+    border: 1px solid var(--black);
+    padding: var(--spacing-s);
+  }  
+
+  th {
+    text-align: left;
+  }

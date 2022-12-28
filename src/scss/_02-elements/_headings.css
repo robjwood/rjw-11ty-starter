@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--grey-900);
+  color: var(--black);
   font-family: var(--font-accent);
   line-height: var(--line-height-xs);
 }

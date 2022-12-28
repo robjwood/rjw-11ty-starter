@@ -5,7 +5,6 @@
 
 
 :root {
-  /* Units. These can be used for anything. */
   --spacing-2xs: 0.1rem;  
   --spacing-xs: 0.25rem;    
   --spacing-s: 0.5rem;      
@@ -23,7 +22,6 @@
 
 
   /* Font sizes */
-
   --ratio: 1.2;
 
   --font-size-xs:   calc(var(--font-size-s) / var(--ratio));
@@ -42,19 +40,20 @@
   /* Line heights */
   --line-height-none:   1;
   --line-height-xs:     1.1;
-  /* --line-height-s:      1.375; */
 
   --line-height-normal: 1.5;
-
-  /* --line-height-l:      1.625; */
-  /* --line-height-xl:     2; */
-  /* --line-height-2xl:    2.5; */
-  /* --line-height-3xl:    3; */
   
     /* Flow space */
   --flow-space: 1.5em;
 
   /* Greyscale */
-  --white:      hsla(0,0%,100%,1);
-  --black:      hsla(0,0%,0%,1);       
+  --white:    hsla(0,0%,100%,1);
+
+  --grey-96:  hsla(0, 0%, 96%,1);
+  --grey-90:  hsla(0, 0%, 90%,1);
+  --grey-70:  hsla(0, 0%, 70%,1);
+  --grey-50:  hsla(0,0%,50%,1);
+  --grey-30:  hsla(0,0%,30%,1);
+
+  --black:    hsla(0,0%,0%,1);       
 }
