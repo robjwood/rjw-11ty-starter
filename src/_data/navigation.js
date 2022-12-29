@@ -9,6 +9,10 @@ module.exports = {
       url: '/elements/'
     },
     {
+      text: 'Components',
+      url: '/components/'
+    },
+    {
       text: 'Section',
       url: '/section/'
     }

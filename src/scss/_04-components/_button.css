@@ -16,13 +16,13 @@
 
 .c-btn:hover {
   background-color: var(--grey-30);
+  border: 0;
 }
 
 .c-btn:focus {
-  /* outline: 3px solid gold; */
-  box-shadow: 0 0 0 var(--spacing-xs) var(--black);
+  outline: 3px solid gold;
 }
 
 .c-btn:active {
-  background-color: var(--grey-50);
+  outline: 3px solid gold;
 }
