@@ -3,7 +3,7 @@
 ===========================================*/
 
 blockquote {
-  background-color: var(--grey-96);
+  background-color: var(--grey-100);
   border-radius: var(--spacing-xs);
   font-size: var(--font-size-m);
   padding: var(--spacing-m) var(--spacing-l);
