@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+
+{% block main %}
+
+<article class="o-wrapper flow">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+</article>
+{% endblock %}
+
+{% block footer %}
+  {# {% include "partials/footer.njk" %} #}
+{% endblock %}
