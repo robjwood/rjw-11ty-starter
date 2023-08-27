@@ -1,4 +1,4 @@
 module.exports = {
-  siteName: "Site name",
-  siteDescription: "Include a short description of your site here.",
+  title: "11ty Starter",
+  description: "11ty Starter",
 };

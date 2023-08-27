@@ -1,11 +1,22 @@
 /* BOX
 ===========================================
 ===========================================*/
-
-
-
 [class^='o-box'] {
-  padding: var(--spacing-l);
+  padding: var(--spacing-base);
+  border: var(--spacing-2xs) solid;
+  --color-light: var(--white);
+  --color-dark: var(--black);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.o-box * {
+  color: inherit;
+}
+
+.o-box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
 }
 
 
@@ -23,7 +34,7 @@
   }
 
   .o-box--m {
-    padding: var(--spacing-m);
+    padding: var(--spacing-base);
   }
 
   .o-box--l {

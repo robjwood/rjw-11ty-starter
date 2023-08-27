@@ -1,4 +1,4 @@
-﻿/* LISTS
+/* LISTS
 ===========================================
 
 ===========================================*/
@@ -6,5 +6,5 @@
 /* Targets all <ul>s with no class (mainly for body copy) */
 ul:not([class]),
 ol:not([class]) {
-  margin-left: var(--spacing-m);
+  margin-left: var(--spacing-base);
 }

@@ -3,13 +3,10 @@
 ===========================================*/
 
 a {
-  color: blue;
+  color: var(--color-action);
+  text-decoration: underline;
 }
 
-  a:visited {
-    color: purple;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
+a:hover {
+  text-decoration: none;
+}

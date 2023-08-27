@@ -1,7 +1,12 @@
 ---
-layout: base.njk
-title: Basic starter site
-description: Basic 11ty starter site. 
+title: 11ty Starter
+description: 11ty Starter
+layout: main.njk
 ---
 
-This is a basic 11ty starter site with basic styles and a basic layout.
+
+## Basic components for eleventy sites
+
+This is a starter site to build more interesting sites from. It's built with 11ty and uses Nunjucks and SCSS.
+
+[Components](/components)

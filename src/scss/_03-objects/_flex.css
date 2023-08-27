@@ -1,7 +1,9 @@
-/* PRE
+﻿/* FLEX
 ===========================================
 ===========================================*/
 
-pre {
-  font-size: var(--font-size-base);
+
+.flex {
+  display: flex;
+  gap: var(--spacing-base);
 }

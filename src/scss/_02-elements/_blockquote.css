@@ -5,8 +5,8 @@
 blockquote {
   background-color: var(--grey-100);
   border-radius: var(--spacing-xs);
-  font-size: var(--font-size-m);
-  padding: var(--spacing-m) var(--spacing-l);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-base) var(--spacing-l);
 }
 
 cite {

@@ -1,26 +1,15 @@
-﻿/*
-NAV Primary
+/* NAV PRIMARY
 ===========================================
-  Navigation, of course.
-===========================================
-*/
-
+===========================================*/
 .c-nav-primary {
-  /* font-family: var(--font-accent); */
+  margin-bottom: var(--spacing-l);
+}
+
+.c-nav-primary ul {
   list-style-type: none;
 }
 
-  .c-nav-primary a {
-    color: var(--white);
-    text-decoration: none;
-    
-  }
-  
-  .c-nav-primary a[aria-current="page"] {
+  .c-nav-primary [data-state="active"],
+  .c-nav-primary [aria-current="page"] {
     font-weight: bold;
   }    
-
-    .c-nav-primary a:hover {
-      text-decoration: underline;
-    }
-

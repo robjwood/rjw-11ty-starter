@@ -3,13 +3,21 @@ title: Elements
 ---
 <style>section {border-bottom: 1px solid lightgray; padding-bottom: 40px;}</style>
 <!-- HTML5 Kitchen based on a previous effort by @dbox -->
+{% from "macros/Buttons/Buttons.njk" import button %}
+
+<!-- HTML5 Kitchen based on a previous effort by @dbox -->
 <section class="flow">
-  <h1>h1 HTML5 Kitchen Sink</h1>
-  <h2>h2 Back in my quaint <a href='#'>garden</a></h2>
-  <h3>h3 Jaunty <a href='#'>zinnias</a> vie with flaunting phlox</h3>
-  <h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4>
-  <h5>h5 Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</h5>
-  <h6>h6 Pack my box with five dozen liquor jugs.</h6>
+  <h1>Heading 1</h1>
+  <p>This is paragraph text. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h2>Heading 2</h2>
+  <p>This is paragraph text. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h3>Heading 3</h3>
+  <p>This is paragraph text. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h4>Heading 4</h4>
+  <p>This is paragraph text. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h5>Heading 5</h5>
+  <p>This is paragraph text. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h6>Heading 6</h5>
 </section>
 
 <section class="flow">
@@ -21,7 +29,57 @@ title: Elements
   <footer>This is footer for this section</footer>
 </section>
 
+
 <section class="flow">
+  <h2>Links and buttons</h2>
+  <p>We all need <a href="https://developer.mozilla.org/en-US/">to have links</a>. It's also great to have buttons like the one below</p>
+
+  {{
+    button({
+      text: 'Button',
+      type: 'button'
+    })
+  }}
+</section>
+
+<section class="flow">
+  <h2>Lists</h2>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+  <ul>
+    <li>Unordered List item one
+      <ul>
+        <li>Nested list item
+          <ul>
+            <li>Level 3, item one</li>
+            <li>Level 3, item two</li>
+            <li>Level 3, item three</li>
+            <li>Level 3, item four</li>
+          </ul>
+        </li>
+        <li>List item two</li>
+        <li>List item three</li>
+        <li>List item four</li>
+      </ul>
+    </li>
+    <li>List item two</li>
+    <li>List item three</li>
+    <li>List item four</li>
+  </ul>
+</section>
+
+<section class="flow">
+  <h2>Blockquotes</h2>
   <blockquote>
     <p>Blockquote: I quickly explained that many big jobs involve few hazards</p>
   </blockquote>
@@ -33,6 +91,7 @@ title: Elements
 </section>
 
 <section>
+  <h2>Tables</h2>
   <table>
     <caption>Tables can have captions now.</caption>
     <tbody>
@@ -65,51 +124,8 @@ title: Elements
   </table>
 </section>
 
-<section class="flow">
-  <ul>
-    <li>Unordered List item one
-      <ul>
-        <li>Nested list item
-          <ul>
-            <li>Level 3, item one</li>
-            <li>Level 3, item two</li>
-            <li>Level 3, item three</li>
-            <li>Level 3, item four</li>
-          </ul>
-        </li>
-        <li>List item two</li>
-        <li>List item three</li>
-        <li>List item four</li>
-      </ul>
-    </li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-  </ul>
-
-  <ol>
-    <li>List item one
-      <ol>
-        <li>List item one
-          <ol>
-            <li>List item one</li>
-            <li>List item two</li>
-            <li>List item three</li>
-            <li>List item four</li>
-          </ol>
-        </li>
-        <li>List item two</li>
-        <li>List item three</li>
-        <li>List item four</li>
-      </ol>
-    </li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-  </ol>
-</section>
-
 <section>
+  <h2>Code</h2>
   <pre>
 pre {
   display: block;
@@ -125,15 +141,16 @@ pre {
 </pre>
 </section>
 
-<section>
+<section class="flow">
+  <h2>Images</h2>
   <figure>
     <img src="https://picsum.photos/id/58/400/300">
     <figcaption>Fig1. A picture from <a href="https://picsum.photos/">Lorem Picsum</a></figcaption>
   </figure>
 </section>
 
-
-<section>
+<section class="flow">
+  <h2>Forms</h2>
   <form class="flow">
     <p>
       <label for="example-input-email">Email address</label>
@@ -209,16 +226,10 @@ pre {
         </label>
       </div>
     </fieldset>
-    
     <fieldset>
       <legend>I am also legend</legend>
       <label><input type="checkbox">Check me out</label>
       <label><input type="checkbox">Or check me out</label>
     </fieldset>
-
-    <button type="button" name="button" class="c-btn">Button</button>
-    <input type="button" name="input" value="Input Button" class="c-btn">
-    <input type="submit" name="submit" value="Submit Button" class="c-btn">
-    <input type="reset" name="reset" value="Reset Button" class="c-btn">
   </form>
 </section>

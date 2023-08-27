@@ -1,0 +1,40 @@
+{% set currentUrl %}{{ page.url }}{% endset %}
+
+<nav class="o-wrapper c-nav-primary">
+  <ul class="padding-left:0 flex" role="list">
+    <li>
+      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
+    </li>
+    {% for item in navigation.top %}
+    <li>
+      <a
+        href="{{ item.url }}"
+        {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+      >
+        {{ item.text }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{#
+<nav class="o-wrapper c-nav-primary mb5">
+  <ul class="padding-left:0 flex" role="list">
+    <li>
+      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
+    </li>
+
+    {% for page in collections.nav %}
+    <li>
+      <a 
+        {% if currentUrl === page.url %}aria-current="page"{% endif %} 
+        href="{{ page.url }}">
+          {{ page.data.title }}
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>
+#}
+
