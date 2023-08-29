@@ -8,12 +8,6 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <header class="padding-top:m padding-bottom:m">
-      {% block navPrimary %}
-        {% include "navPrimary.njk" %}
-      {% endblock %}
-    </header>
-    
     <main> 
       {% block main %}
         {{ content | safe }}

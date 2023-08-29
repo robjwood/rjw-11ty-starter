@@ -2,12 +2,17 @@
 layout: base.njk
 ---
 
+<header>
+  {% block navPrimary %}
+    {% include "navPrimary.njk" %}
+  {% endblock %}
+</header>
+
 {% block main %}
 
-<article class="o-wrapper flow">
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
-</article>
+  <article class="o-wrapper p-l">
+    {{ content | safe }}
+  </article>
 {% endblock %}
 
 {% block footer %}

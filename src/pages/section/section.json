@@ -1,5 +1,4 @@
 {
-  "layout": "main.njk",
-  "tags": "section",
+  "layout": "page.njk",
   "permalink": "/section/{{ page.fileSlug }}/"
 }

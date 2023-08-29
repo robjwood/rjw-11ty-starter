@@ -1,6 +1,6 @@
 ---
 title: Section
-"permalink": "/{{ page.fileSlug }}/"
+permalink: "/{{ page.fileSlug }}/"
 ---
 
 This is a section with pages inside it:

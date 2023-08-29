@@ -12,5 +12,9 @@ module.exports = {
       text: 'Section',
       url: '/section/'
     },
+    {
+      text: 'Blog',
+      url: '/blog/'
+    },
   ]
 };

@@ -3,5 +3,10 @@
 ===========================================*/
 
 pre {
-  font-size: var(--font-size-base);
+  background-color: var(--grey-900);
+  border-radius: var(--spacing-s);
+  padding: var(--spacing-l);
+  white-space: pre-wrap;
+  word-break: break-all;
 }
+
