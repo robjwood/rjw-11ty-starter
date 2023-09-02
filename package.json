@@ -2,7 +2,7 @@
   "name": "11tystarter",
   "version": "1.0.0",
   "description": "11tystarter",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "watch:sass": "sass --no-source-map --watch src/scss:public/css",
     "watch:eleventy": "eleventy --serve",
