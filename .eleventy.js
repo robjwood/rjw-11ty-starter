@@ -2,9 +2,10 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
 
-  // Copy the 'img/' directories 
+  // Copy the following directories to the output folder 
   eleventyConfig.addPassthroughCopy("src/img");
-
+  eleventyConfig.addPassthroughCopy("src/js");
+  
   // Filters
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toISODate();

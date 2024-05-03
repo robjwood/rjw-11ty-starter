@@ -6,6 +6,9 @@
 }
 
 .c-nav-primary ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-base);
   list-style-type: none;
 }
 
